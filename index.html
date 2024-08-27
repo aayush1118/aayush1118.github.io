@@ -6,6 +6,26 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .animate-gradient {
+        background-size: 300%;
+        -webkit-animation: animatedgradient 6s ease infinite alternate;
+        -moz-animation: animatedgradient 6s ease infinite alternate;
+        animation: animatedgradient 6s ease infinite alternate;
+      }
+
+      @keyframes animatedgradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
     <title>Aayush Jain</title>
   </head>
   <body
@@ -24,6 +44,17 @@
                 href="/"
                 >hello 👋</a
               >
+              <a
+                class="relative flex px-2 py-1 align-middle transition-all"
+                href="aayushjain.pdf" download 
+              >
+                <span
+                  class="bg-clip-text px-1  animate-gradient bg-gradient-to-r from-blue-400 to-green-400 bg-300% text-transparent"
+                >
+                  download resume
+                </span>
+                ⬇
+              </a>
             </div>
           </nav>
         </div>
